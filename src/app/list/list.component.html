@@ -1,0 +1,65 @@
+<mat-list role="list">
+  <mat-list-item role="listitem">Item 1</mat-list-item>
+  <mat-list-item role="listitem">Item 2</mat-list-item>
+  <mat-list-item role="listitem">Item 3</mat-list-item>
+</mat-list>
+<mat-list>
+  <mat-list-item>Item 1</mat-list-item>
+  <mat-list-item>Item 2</mat-list-item>
+  <mat-list-item>Item 3</mat-list-item>
+</mat-list>
+<h3>Single line lists</h3>
+<mat-list>
+  <mat-list-item>
+    <span matListItemTitle>This is the title</span>
+  </mat-list-item>
+  <mat-list-item>Also the title</mat-list-item>
+</mat-list>
+
+<h3>Two line lists</h3>
+<mat-list>
+  <mat-list-item>
+    <span matListItemTitle>Title</span>
+    <span matListItemLine>Second line</span>
+  </mat-list-item>
+  <mat-list-item>
+    <span matListItemTitle>Title</span>
+    <span>Second line</span>
+  </mat-list-item>
+  <mat-list-item>
+    <span matListItemTitle>Title</span>
+    Second line
+  </mat-list-item>
+</mat-list>
+<br />
+<mat-action-list>
+  <button mat-list-item (click)="save()">Save</button>
+  <button mat-list-item (click)="undo()">Undo</button>
+</mat-action-list>
+<br />
+<mat-selection-list #shoes>
+  <mat-list-option *ngFor="let shoe of typesOfShoes">
+    {{ shoe }}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>Options selected: {{ shoes.selectedOptions.selected.length }}</p>
+<br />
+<mat-divider></mat-divider>
+<mat-list>
+  <div mat-subheader>Folders</div>
+  <mat-list-item *ngFor="let folder of folders">
+    <mat-icon matListItemIcon>folder</mat-icon>
+    <div matListItemTitle>{{ folder.name }}</div>
+    <br />
+    <div matListItemLine>{{ folder.updated | date }}</div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <div mat-subheader>Notes</div>
+  <mat-list-item *ngFor="let note of notes">
+    <mat-icon matListItemIcon>note</mat-icon>
+    <div matListItemTitle>{{ note.name }}</div>
+    <br />
+    <div matListItemLine>{{ note.updated }}</div>
+  </mat-list-item>
+</mat-list>

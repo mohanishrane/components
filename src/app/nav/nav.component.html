@@ -1,0 +1,47 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar>Components</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/badge">Badge</a>
+      <a mat-list-item routerLink="/button">Button</a>
+      <a mat-list-item routerLink="/buttontoggle">Button toggle</a>
+      <a mat-list-item routerLink="/card">Card</a>
+      <a mat-list-item routerLink="/checkbox">Checkbox</a>
+      <a mat-list-item routerLink="/checkbox2">Checkbox-2</a>
+      <a mat-list-item routerLink="/chips">Chips</a>
+      <a mat-list-item routerLink="/divider">Divider</a>
+      <a mat-list-item routerLink="/dialog">Dialog</a>
+      <a mat-list-item routerLink="/expansionpanel">Expansion Panel</a>
+      <a mat-list-item routerLink="/icon">Icon</a>
+      <a mat-list-item routerLink="/formfield">Formfield</a>
+      <a mat-list-item routerLink="/input">Input</a>
+      <a mat-list-item routerLink="/list">List</a>
+      <a mat-list-item routerLink="/menu">Menu</a>
+      <a mat-list-item routerLink="/progressbar">Progress bar</a>
+      <a mat-list-item routerLink="/progressspinner">Progress spinner</a>
+      <a mat-list-item routerLink="/paginator">Paginator</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>components</span>
+    </mat-toolbar> -->
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
