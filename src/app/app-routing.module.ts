@@ -19,6 +19,18 @@ import { MenuComponent } from './menu/menu.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { PaginatorComponent } from './paginator/paginator.component';
+import { RadioComponent } from './radio/radio.component';
+import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { SliderComponent } from './slider/slider.component';
+import { SnackBarComponent } from './snack-bar/snack-bar.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
+import { TreeComponent } from './tree/tree.component';
+import { SelectComponent } from './select/select.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { StepperComponent } from './stepper/stepper.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TableComponent } from './table/table.component';
 
 const routes: Routes = [
   {
@@ -44,6 +56,18 @@ const routes: Routes = [
       { path: 'progressbar', component: ProgressBarComponent },
       { path: 'progressspinner', component: ProgressSpinnerComponent },
       { path: 'paginator', component: PaginatorComponent },
+      { path: 'radio', component: RadioComponent },
+      { path: 'slidetoggle', component: SlideToggleComponent },
+      { path: 'slider', component: SliderComponent },
+      { path: 'snackbar', component: SnackBarComponent },
+      { path: 'toolbar', component: ToolbarComponent },
+      { path: 'tooltip', component: TooltipComponent },
+      { path: 'tree', component: TreeComponent },
+      { path: 'select', component: SelectComponent },
+      { path: 'sidenav', component: SidenavComponent },
+      { path: 'stepper', component: StepperComponent },
+      { path: 'tabs', component: TabsComponent },
+      { path: 'table', component: TableComponent },
     ],
   },
 ];

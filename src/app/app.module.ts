@@ -27,6 +27,14 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTreeModule } from '@angular/material/tree';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -50,6 +58,22 @@ import { MenuComponent } from './menu/menu.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { PaginatorComponent } from './paginator/paginator.component';
+import { RadioComponent } from './radio/radio.component';
+import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { SliderComponent } from './slider/slider.component';
+import {
+  SnackBarComponent,
+  PizzaPartyComponent,
+} from './snack-bar/snack-bar.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
+import { TreeComponent } from './tree/tree.component';
+import { SelectComponent } from './select/select.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { StepperComponent } from './stepper/stepper.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TableComponent } from './table/table.component';
+//import { PizzaPartyComponent } from './snack-bar/snack-bar.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +98,19 @@ import { PaginatorComponent } from './paginator/paginator.component';
     ProgressBarComponent,
     ProgressSpinnerComponent,
     PaginatorComponent,
+    RadioComponent,
+    SlideToggleComponent,
+    SliderComponent,
+    SnackBarComponent,
+    PizzaPartyComponent,
+    ToolbarComponent,
+    TooltipComponent,
+    TreeComponent,
+    SelectComponent,
+    SidenavComponent,
+    StepperComponent,
+    TabsComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -105,6 +142,14 @@ import { PaginatorComponent } from './paginator/paginator.component';
     MatMenuModule,
     MatProgressSpinnerModule,
     MatPaginatorModule,
+    MatSlideToggleModule,
+    MatSliderModule,
+    MatSnackBarModule,
+    MatTooltipModule,
+    MatTreeModule,
+    MatStepperModule,
+    MatTabsModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
